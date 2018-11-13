@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.trydev.scoreoceania.InovationActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stability Innovation (40%)"
+        android:textSize="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white"
+        android:background="@color/colorAccent"
+        android:id="@+id/staI"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Structural Innovation (30%)"
+        android:textSize="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white"
+        android:background="@color/colorAccent"
+        android:id="@+id/strI"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Economical Prespective (20%)"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white"
+        android:background="@color/colorAccent"
+        android:textSize="10dp"
+        android:id="@+id/fe"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Other Innovation (10%)"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/white"
+        android:background="@color/colorAccent"
+        android:textSize="10dp"
+        android:id="@+id/oi"/>
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="nama Team"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:id="@+id/listTeam"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/listTeam"
+        android:id="@+id/listUniv"
+        android:text="Airlangga"/>
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="score"
+        android:textColor="@android:color/white"
+        android:background="@color/colorAccent"
+        android:textSize="8sp"
+        android:id="@+id/listScore"
+        android:layout_toLeftOf="@+id/edit"
+        android:layout_marginRight="10dp"/>
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="edit"
+        android:textColor="@android:color/white"
+        android:background="@color/colorAccent"
+        android:textSize="8sp"
+        android:id="@+id/edit"
+        android:layout_toLeftOf="@+id/delete"
+        android:layout_marginRight="10dp"/>
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="delete"
+        android:textColor="@android:color/white"
+        android:background="@color/colorAccent"
+        android:textSize="8sp"
+        android:id="@+id/delete"
+        android:layout_alignParentRight="true" />
+</RelativeLayout>

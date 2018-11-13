@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "43648569323",
+    "firebase_url": "https://scoreoceania.firebaseio.com",
+    "project_id": "scoreoceania",
+    "storage_bucket": "scoreoceania.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:43648569323:android:99354c78e5502ddf",
+        "android_client_info": {
+          "package_name": "com.trydev.scoreoceania"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "43648569323-6mpj1lnl8q6s6epl5c9gltj5ok819j31.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.trydev.scoreoceania",
+            "certificate_hash": "0625dd92ca9b558d25d69dd980c06de4eb03846f"
+          }
+        },
+        {
+          "client_id": "43648569323-kf3jkg2sr4dbnphhu1e9ulvpukmlsfb2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlcTQE_qY8rGwP6gcme9JydI_FPJRMpY0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "43648569323-kf3jkg2sr4dbnphhu1e9ulvpukmlsfb2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

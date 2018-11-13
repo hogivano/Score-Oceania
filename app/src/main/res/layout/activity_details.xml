@@ -1,0 +1,1142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.trydev.scoreoceania.DetailsActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:id="@+id/llDetails">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Simpan PDF"
+            android:id="@+id/savePdf"
+            android:background="@color/colorAccent"
+            android:layout_marginBottom="20dp"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hendriyan Ogivano"
+            android:textColor="@android:color/black"
+            android:id="@+id/detailsTeam"
+            android:textSize="16sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Universitas Airlangga"
+            android:id="@+id/detailsUniv"
+            android:textSize="10sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="Presentation (30%)"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PlatUnder (30%) :"
+                android:layout_marginTop="10dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="3dp"
+                android:id="@+id/rlPu">
+                <!-- Juri 1 Pu -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 1 : "
+                    android:id="@+id/puJuri1"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/puJuri1"
+                    android:text="-"
+                    android:id="@+id/detailsJuri1Pu"/>
+
+
+                <!-- Juri 2 Pu -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 2 : "
+                    android:layout_below="@+id/puJuri1"
+                    android:id="@+id/puJuri2"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/puJuri2"
+                    android:layout_below="@+id/puJuri1"
+                    android:text="-"
+                    android:id="@+id/detailsJuri2Pu"/>
+
+                <!-- Juri 3 Pu -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 3 : "
+                    android:layout_below="@+id/puJuri2"
+                    android:id="@+id/puJuri3"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/puJuri3"
+                    android:layout_below="@+id/puJuri2"
+                    android:text="-"
+                    android:id="@+id/detailsJuri3Pu"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Fluency of Presentation Deliv (20%) :"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="3dp"
+                android:id="@+id/rlFpd">
+                <!-- Juri 1 Fpd -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 1 : "
+                    android:id="@+id/fpdJuri1"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/fpdJuri1"
+                    android:text="-"
+                    android:id="@+id/detailsJuri1Fpd"/>
+
+
+                <!-- Juri 2 Fpd -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 2 : "
+                    android:layout_below="@+id/fpdJuri1"
+                    android:id="@+id/fpdJuri2"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/fpdJuri2"
+                    android:layout_below="@+id/fpdJuri1"
+                    android:text="-"
+                    android:id="@+id/detailsJuri2Fpd"/>
+
+                <!-- Juri 3 Fpd -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 3 : "
+                    android:layout_below="@+id/fpdJuri2"
+                    android:id="@+id/fpdJuri3"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/fpdJuri3"
+                    android:layout_below="@+id/fpdJuri2"
+                    android:text="-"
+                    android:id="@+id/detailsJuri3Fpd"/>
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Team Cohesiveness (10%) :"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="3dp"
+                android:id="@+id/rlTc">
+                <!-- Juri 1 Tc -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 1 : "
+                    android:id="@+id/tcJuri1"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tcJuri1"
+                    android:text="-"
+                    android:id="@+id/detailsJuri1Tc"/>
+
+
+                <!-- Juri 2 Tc -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 2 : "
+                    android:layout_below="@+id/tcJuri1"
+                    android:id="@+id/tcJuri2"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tcJuri2"
+                    android:layout_below="@+id/tcJuri1"
+                    android:text="-"
+                    android:id="@+id/detailsJuri2Tc"/>
+
+                <!-- Juri 3 Tc -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 3 : "
+                    android:layout_below="@+id/tcJuri2"
+                    android:id="@+id/tcJuri3"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tcJuri3"
+                    android:layout_below="@+id/tcJuri2"
+                    android:text="-"
+                    android:id="@+id/detailsJuri3Tc"/>
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Answering Ability (40%) :"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="3dp"
+                android:id="@+id/rlAa">
+                <!-- Juri 1 Aa -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 1 : "
+                    android:id="@+id/aaJuri1"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/aaJuri1"
+                    android:text="-"
+                    android:id="@+id/detailsJuri1Aa"/>
+
+
+                <!-- Juri 2 Aa -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 2 : "
+                    android:layout_below="@+id/aaJuri1"
+                    android:id="@+id/aaJuri2"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/aaJuri2"
+                    android:layout_below="@+id/aaJuri1"
+                    android:text="-"
+                    android:id="@+id/detailsJuri2Aa"/>
+
+                <!-- Juri 3 Aa -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 3 : "
+                    android:layout_below="@+id/aaJuri2"
+                    android:id="@+id/aaJuri3"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/aaJuri3"
+                    android:layout_below="@+id/aaJuri2"
+                    android:text="-"
+                    android:id="@+id/detailsJuri3Aa"/>
+            </RelativeLayout>
+
+            <!-- Sub Total -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sub Total (100%) : "
+                android:id="@+id/judulSubTotal"
+                android:layout_marginTop="10dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="3dp">
+                <!-- Juri 1 Sub Total -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 1 : "
+                    android:id="@+id/subTotPresJuri1"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/subTotPresJuri1"
+                    android:text="-"
+                    android:id="@+id/presJuri1SubTot"/>
+
+
+                <!-- Juri 2 Sub Total -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 2 : "
+                    android:layout_below="@+id/subTotPresJuri1"
+                    android:id="@+id/subTotPresJuri2"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/subTotPresJuri2"
+                    android:layout_below="@+id/subTotPresJuri1"
+                    android:text="-"
+                    android:id="@+id/presJuri2SubTot"/>
+
+                <!-- Juri 3 Sub Total -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 3 : "
+                    android:layout_below="@+id/subTotPresJuri2"
+                    android:id="@+id/subTotPresJuri3"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/subTotPresJuri3"
+                    android:layout_below="@+id/subTotPresJuri2"
+                    android:text="-"
+                    android:id="@+id/presJuri3SubTot"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Bobot : "
+                android:id="@+id/judulTotalBobot"
+                android:layout_marginTop="10dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="3dp">
+                <!-- Juri 1 Total Bobot -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 1 : "
+                    android:id="@+id/totBotPresJuri1"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/totBotPresJuri1"
+                    android:text="-"
+                    android:id="@+id/presJuri1TotBot"/>
+
+
+                <!-- Juri 2 Total Bobot -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 2 : "
+                    android:layout_below="@+id/totBotPresJuri1"
+                    android:id="@+id/totBotPresJuri2"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/totBotPresJuri2"
+                    android:layout_below="@+id/totBotPresJuri1"
+                    android:text="-"
+                    android:id="@+id/presJuri2TotBot"/>
+
+                <!-- Juri 3 Total Bobot -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 3 : "
+                    android:layout_below="@+id/totBotPresJuri2"
+                    android:id="@+id/totBotPresJuri3"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/totBotPresJuri3"
+                    android:layout_below="@+id/totBotPresJuri2"
+                    android:text="-"
+                    android:id="@+id/presJuri3TotBot"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:layout_marginTop="10dp"
+                android:id="@+id/presTotal"
+                android:textColor="@android:color/black"/>
+        </LinearLayout>
+
+
+        <!-- Inovation -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="Inovation (25%)"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Stability Innovation (40%) :"
+                android:layout_marginTop="10dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="3dp"
+                android:id="@+id/rlStaI">
+                <!-- Juri 1 Sta I -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 1 : "
+                    android:id="@+id/staIJuri1"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/staIJuri1"
+                    android:text="-"
+                    android:id="@+id/detailsJuri1StaI"/>
+
+
+                <!-- Juri 2 Sta I -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 2 : "
+                    android:layout_below="@+id/staIJuri1"
+                    android:id="@+id/staIJuri2"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/staIJuri2"
+                    android:layout_below="@+id/staIJuri1"
+                    android:text="-"
+                    android:id="@+id/detailsJuri2StaI"/>
+
+                <!-- Juri 3 Sta I -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 3 : "
+                    android:layout_below="@+id/staIJuri2"
+                    android:id="@+id/staIJuri3"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/staIJuri3"
+                    android:layout_below="@+id/staIJuri2"
+                    android:text="-"
+                    android:id="@+id/detailsJuri3StaI"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Structural Innovation (30%) :"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="3dp"
+                android:id="@+id/rlStrI">
+                <!-- Juri 1 Str I -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 1 : "
+                    android:id="@+id/strIJuri1"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/strIJuri1"
+                    android:text="-"
+                    android:id="@+id/detailsJuri1StrI"/>
+
+
+                <!-- Juri 2 Str I -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 2 : "
+                    android:layout_below="@+id/strIJuri1"
+                    android:id="@+id/strIJuri2"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/strIJuri2"
+                    android:layout_below="@+id/strIJuri1"
+                    android:text="-"
+                    android:id="@+id/detailsJuri2StrI"/>
+
+                <!-- Juri 3 Str I -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 3 : "
+                    android:layout_below="@+id/strIJuri2"
+                    android:id="@+id/strIJuri3"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/strIJuri3"
+                    android:layout_below="@+id/strIJuri2"
+                    android:text="-"
+                    android:id="@+id/detailsJuri3StrI"/>
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Economical Prespective (20%) :"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="3dp"
+                android:id="@+id/rlFe">
+                <!-- Juri 1 Fe -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 1 : "
+                    android:id="@+id/feJuri1"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/feJuri1"
+                    android:text="-"
+                    android:id="@+id/detailsJuri1Fe"/>
+
+
+                <!-- Juri 2 Fe -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 2 : "
+                    android:layout_below="@+id/feJuri1"
+                    android:id="@+id/feJuri2"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/feJuri2"
+                    android:layout_below="@+id/feJuri1"
+                    android:text="-"
+                    android:id="@+id/detailsJuri2Fe"/>
+
+                <!-- Juri 3 Tc -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 3 : "
+                    android:layout_below="@+id/feJuri2"
+                    android:id="@+id/feJuri3"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/feJuri3"
+                    android:layout_below="@+id/feJuri2"
+                    android:text="-"
+                    android:id="@+id/detailsJuri3Fe"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Other Innovation (10%) :"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="3dp"
+                android:id="@+id/rlOi">
+                <!-- Juri 1 Fe -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 1 : "
+                    android:id="@+id/oiJuri1"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/oiJuri1"
+                    android:text="-"
+                    android:id="@+id/detailsJuri1Oi"/>
+
+
+                <!-- Juri 2 Fe -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 2 : "
+                    android:layout_below="@+id/oiJuri1"
+                    android:id="@+id/oiJuri2"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/oiJuri2"
+                    android:layout_below="@+id/oiJuri1"
+                    android:text="-"
+                    android:id="@+id/detailsJuri2Oi"/>
+
+                <!-- Juri 3 Tc -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 3 : "
+                    android:layout_below="@+id/oiJuri2"
+                    android:id="@+id/oiJuri3"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/oiJuri3"
+                    android:layout_below="@+id/oiJuri2"
+                    android:text="-"
+                    android:id="@+id/detailsJuri3Oi"/>
+            </RelativeLayout>
+
+            <!-- Sub Total -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sub Total (100%) : "
+                android:layout_marginTop="10dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="3dp">
+                <!-- Juri 1 Sub Total -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 1 : "
+                    android:id="@+id/subTotInovJuri1"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/subTotInovJuri1"
+                    android:text="-"
+                    android:id="@+id/InovJuri1SubTot"/>
+
+
+                <!-- Juri 2 Sub Total -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 2 : "
+                    android:layout_below="@+id/subTotInovJuri1"
+                    android:id="@+id/subTotInovJuri2"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/subTotInovJuri2"
+                    android:layout_below="@+id/subTotInovJuri1"
+                    android:text="-"
+                    android:id="@+id/InovJuri2SubTot"/>
+
+                <!-- Juri 3 Sub Total -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 3 : "
+                    android:layout_below="@+id/subTotInovJuri2"
+                    android:id="@+id/subTotInovJuri3"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/subTotInovJuri3"
+                    android:layout_below="@+id/subTotInovJuri2"
+                    android:text="-"
+                    android:id="@+id/InovJuri3SubTot"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Bobot : "
+                android:layout_marginTop="10dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="3dp">
+                <!-- Juri 1 Total Bobot -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 1 : "
+                    android:id="@+id/totBotInovJuri1"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/totBotInovJuri1"
+                    android:text="-"
+                    android:id="@+id/InovJuri1TotBot"/>
+
+
+                <!-- Juri 2 Total Bobot -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 2 : "
+                    android:layout_below="@+id/totBotInovJuri1"
+                    android:id="@+id/totBotInovJuri2"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/totBotInovJuri2"
+                    android:layout_below="@+id/totBotInovJuri1"
+                    android:text="-"
+                    android:id="@+id/InovJuri2TotBot"/>
+
+                <!-- Juri 3 Total Bobot -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 3 : "
+                    android:layout_below="@+id/totBotInovJuri2"
+                    android:id="@+id/totBotInovJuri3"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/totBotInovJuri3"
+                    android:layout_below="@+id/totBotInovJuri2"
+                    android:text="-"
+                    android:id="@+id/InovJuri3TotBot"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:layout_marginTop="10dp"
+                android:id="@+id/inovTotal"
+                android:textColor="@android:color/black"/>
+        </LinearLayout>
+
+
+        <!-- Platform -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="Platform (15%)"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Topside Details (30%) :"
+                android:layout_marginTop="10dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="3dp"
+                android:id="@+id/rlTd">
+                <!-- Juri 1 Td -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 1 : "
+                    android:id="@+id/tdJuri1"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tdJuri1"
+                    android:text="-"
+                    android:id="@+id/detailsJuri1Td"/>
+
+
+                <!-- Juri 2 Td -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 2 : "
+                    android:layout_below="@+id/tdJuri1"
+                    android:id="@+id/tdJuri2"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tdJuri2"
+                    android:layout_below="@+id/tdJuri1"
+                    android:text="-"
+                    android:id="@+id/detailsJuri2Td"/>
+
+                <!-- Juri 3 Td -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 3 : "
+                    android:layout_below="@+id/tdJuri2"
+                    android:id="@+id/tdJuri3"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tdJuri3"
+                    android:layout_below="@+id/tdJuri2"
+                    android:text="-"
+                    android:id="@+id/detailsJuri3Td"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Model Presentability (20%) :"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="3dp"
+                android:id="@+id/rlmPre">
+                <!-- Juri 1 mPre -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 1 : "
+                    android:id="@+id/mPreJuri1"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/mPreJuri1"
+                    android:text="-"
+                    android:id="@+id/detailsJuri1MPre"/>
+
+
+                <!-- Juri 2 mPre -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 2 : "
+                    android:layout_below="@+id/mPreJuri1"
+                    android:id="@+id/mPreJuri2"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/mPreJuri2"
+                    android:layout_below="@+id/mPreJuri1"
+                    android:text="-"
+                    android:id="@+id/detailsJuri2MPre"/>
+
+                <!-- Juri 3 mPre -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 3 : "
+                    android:layout_below="@+id/mPreJuri2"
+                    android:id="@+id/mPreJuri3"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/mPreJuri3"
+                    android:layout_below="@+id/mPreJuri2"
+                    android:text="-"
+                    android:id="@+id/detailsJuri3MPre"/>
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Model Proportionality (50%) :"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="3dp"
+                android:id="@+id/rlMPro">
+                <!-- Juri 1 mPro -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 1 : "
+                    android:id="@+id/mProJuri1"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/mProJuri1"
+                    android:text="-"
+                    android:id="@+id/detailsJuri1MPro"/>
+
+
+                <!-- Juri 2 mPro -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 2 : "
+                    android:layout_below="@+id/mProJuri1"
+                    android:id="@+id/mProJuri2"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/mProJuri2"
+                    android:layout_below="@+id/mProJuri1"
+                    android:text="-"
+                    android:id="@+id/detailsJuri2MPro"/>
+
+                <!-- Juri 3 mPro -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 3 : "
+                    android:layout_below="@+id/mProJuri2"
+                    android:id="@+id/mProJuri3"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/mProJuri3"
+                    android:layout_below="@+id/mProJuri2"
+                    android:text="-"
+                    android:id="@+id/detailsJuri3MPro"/>
+            </RelativeLayout>
+
+            <!-- Sub Total -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sub Total (100%) : "
+                android:layout_marginTop="10dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="3dp">
+                <!-- Juri 1 Sub Total -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 1 : "
+                    android:id="@+id/subTotPlatJuri1"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/subTotPlatJuri1"
+                    android:text="-"
+                    android:id="@+id/platJuri1SubTot"/>
+
+
+                <!-- Juri 2 Sub Total -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 2 : "
+                    android:layout_below="@+id/subTotPlatJuri1"
+                    android:id="@+id/subTotPlatJuri2"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/subTotPlatJuri2"
+                    android:layout_below="@+id/subTotPlatJuri1"
+                    android:text="-"
+                    android:id="@+id/platJuri2SubTot"/>
+
+                <!-- Juri 3 Sub Total -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 3 : "
+                    android:layout_below="@+id/subTotPlatJuri2"
+                    android:id="@+id/subTotPlatJuri3"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/subTotPlatJuri3"
+                    android:layout_below="@+id/subTotPlatJuri2"
+                    android:text="-"
+                    android:id="@+id/platJuri3SubTot"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Bobot : "
+                android:layout_marginTop="10dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="3dp">
+                <!-- Juri 1 Total Bobot -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 1 : "
+                    android:id="@+id/totBotPlatJuri1"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/totBotPlatJuri1"
+                    android:text="-"
+                    android:id="@+id/platJuri1TotBot"/>
+
+
+                <!-- Juri 2 Total Bobot -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 2 : "
+                    android:layout_below="@+id/totBotPlatJuri1"
+                    android:id="@+id/totBotPlatJuri2"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/totBotPlatJuri2"
+                    android:layout_below="@+id/totBotPlatJuri1"
+                    android:text="-"
+                    android:id="@+id/platJuri2TotBot"/>
+
+                <!-- Juri 3 Total Bobot -->
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="Juri 3 : "
+                    android:layout_below="@+id/totBotPlatJuri2"
+                    android:id="@+id/totBotPlatJuri3"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/totBotPlatJuri3"
+                    android:layout_below="@+id/totBotPlatJuri2"
+                    android:text="-"
+                    android:id="@+id/platJuri3TotBot"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:layout_marginTop="10dp"
+                android:id="@+id/platTotal"
+                android:textColor="@android:color/black"/>
+        </LinearLayout>
+
+
+        <!-- Wave -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:text="Wave (30%)"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:gravity="center"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/rlWave">
+                <!-- Juri 1 Hh -->
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Heave Height : "
+                    android:id="@+id/waveHh"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/waveHh"
+                    android:text="-"
+                    android:id="@+id/detailsWaveHh"/>
+
+
+                <!-- Juri 2 Min Hh -->
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Min Heave Height : "
+                    android:layout_below="@+id/waveHh"
+                    android:id="@+id/waveMinHh"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/waveMinHh"
+                    android:layout_below="@+id/waveHh"
+                    android:text="-"
+                    android:id="@+id/detailsWaveMinHh"/>
+
+                <!-- Juri 3 Wave Test Score -->
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Test Score : "
+                    android:layout_below="@+id/waveMinHh"
+                    android:id="@+id/waveScore"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/waveMinHh"
+                    android:layout_below="@+id/waveMinHh"
+                    android:text="-"
+                    android:id="@+id/detailsWaveScore"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:layout_marginTop="10dp"
+                android:id="@+id/waveTotal"
+                android:textColor="@android:color/black"/>
+        </LinearLayout>
+
+        <TextView
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textColor="@android:color/black"
+            android:id="@+id/akumulasi"
+            android:textSize="15sp"
+            android:gravity="center"/>
+    </LinearLayout>
+</ScrollView>
